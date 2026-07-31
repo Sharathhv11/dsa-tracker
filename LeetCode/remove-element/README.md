@@ -12,7 +12,7 @@
 - **Space Complexity:** O(1)
 
 ## Explanation
-The solution uses a two-pointer approach. One pointer `i` iterates from the beginning, and another pointer `r` iterates from the end. If an element at `i` matches `val`, it's swapped with the element at `r`, and `r` is decremented. Otherwise, `i` is incremented. This ensures all elements not equal to `val` are moved to the beginning of the array. Since each element is visited at most once, the time complexity is O(N), and no extra space is used, resulting in O(1) space complexity.
+The solution uses a two-pointer approach. The left pointer `i` iterates through the array, and the right pointer `r` starts from the end. When an element equal to `val` is found at `nums[i]`, it's swapped with the element at `nums[r]`, and `r` is decremented. This process ensures that all elements not equal to `val` are moved to the beginning of the array, resulting in O(N) time complexity. No extra space is used beyond a few variables, hence O(1) space complexity.
 
 ---
 *Generated automatically by [CodeStreak](https://github.com/Sharathhv11/CodeStreak-webApp).*
