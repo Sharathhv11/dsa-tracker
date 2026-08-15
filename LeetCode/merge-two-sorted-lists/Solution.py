@@ -24,12 +24,7 @@ class Solution(object):
             val1 = p1.val
             val2 = p2.val
 
-            if( val1 == val2 ):
-                previous.next = p1
-                previous = previous.next
-                p1 = p1.next
-
-            elif( val1 < val2 ):
+            if( val1 <= val2 ):
                 previous.next = p1
                 previous = previous.next
                 p1 = p1.next
